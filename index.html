@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias de Barrio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    header { background: #222; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #444; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a {
+      color: white; padding: 15px 20px; text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover { background: #666; }
+    .container { padding: 20px; max-width: 1200px; margin: auto; }
+    .section-title { margin: 30px 0 10px; font-size: 24px; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .news-card {
+      background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 5px; }
+    .news-card h3 { margin: 10px 0 5px; font-size: 18px; }
+    .news-card p { font-size: 14px; }
+    .news-card a { color: #007BFF; text-decoration: none; font-size: 14px; }
+    footer { background: #222; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noticias de Barrio</h1>
+    <p>Información que te toca de cerca</p>
+  </header>
+  <nav>
+    <a href="#policiales">Policiales</a>
+    <a href="#locales">Locales</a>
+    <a href="#nacionales">Nacionales</a>
+    <a href="#internacionales">Internacionales</a>
+    <a href="#servicios">Servicios</a>
+  </nav>
+
+  <div class="container">
+    <section id="policiales">
+      <h2 class="section-title">Policiales</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <img src="imagen1.jpg" alt="Noticia policial">
+          <h3>Operativo en la zona sur</h3>
+          <p>La policía realizó un allanamiento con resultados positivos en un caso de robo.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="locales">
+      <h2 class="section-title">Locales</h2>
+      <div class="news-grid">
+        <!-- Noticias locales aquí -->
+      </div>
+    </section>
+
+    <section id="nacionales">
+      <h2 class="section-title">Nacionales</h2>
+      <div class="news-grid">
+        <!-- Noticias nacionales aquí -->
+      </div>
+    </section>
+
+    <section id="internacionales">
+      <h2 class="section-title">Internacionales</h2>
+      <div class="news-grid">
+        <!-- Noticias internacionales aquí -->
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h2 class="section-title">Servicios</h2>
+      <div class="news-grid">
+        <!-- Noticias de servicios aquí -->
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Noticias de Barrio - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
